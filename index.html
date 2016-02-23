@@ -1,23 +1,31 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-<div class="home">
+<body class="front">
+  <div class="container">
+    <header>
+      <img src="images/ygm-300.png" width=60 />
+      <h1>Yale Guild of Makers</h1>
+    </header>
 
-  <h1 class="page-heading">Posts</h1>
+    <main>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra eros dui. Nunc vulputate molestie tortor ut rhoncus. Nunc enim purus, dictum sit amet ipsum non, vulputate mollis felis. Ut pretium eleifend elit consectetur finibus. Nullam a mollis nisl. Suspendisse interdum porta justo, eget accumsan sem. Suspendisse potenti. Donec ullamcorper, odio non elementum placerat, nibh erat mollis odio, id ultricies sapien dolor in turpis. Donec euismod ante in felis
+      semper, eu scelerisque nibh rutrum.
+      </p>
+      <p>
+      Nunc et semper turpis, in auctor enim. Morbi nec semper risus. Donec quis mollis ligula. Phasellus scelerisque, leo a pretium sollicitudin, nunc magna laoreet nulla, vitae faucibus enim nisl eget lacus. Aenean sit amet maximus nunc. Etiam sed dignissim massa. Nunc nec ex mattis, gravida tellus quis, scelerisque arcu. Praesent tristique purus enim, semper sollicitudin urna varius vel.
+      </p>
+    </main>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <footer>
+      <p>
+        yaleguildofmakers.com
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
