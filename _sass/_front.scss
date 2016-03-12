@@ -1,10 +1,10 @@
 
 body.front {
-
-  margin-top: 30px;
+  margin-top: 50px;
+  padding: 0 10px;
 
   header {
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
     img, h1 {
       vertical-align: middle;
       display: inline-block;
@@ -30,6 +30,12 @@ body.front {
 }
 
 .container {
-  width: 800px;
+  max-width: 640px;
   margin: auto;
+  text-align: center;
+  font-size: 16px;
+
+  p {
+    text-align: left;
+  }
 }
